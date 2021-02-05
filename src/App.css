@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Open Sans , sans-serif;
+  font-family: Open Sans, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -29,7 +29,6 @@ body {
 }
 
 @keyframes spin {
-
   0% {
     transform: rotate(0deg);
   }
@@ -93,3 +92,27 @@ body {
     transform: rotate(-10deg);
   }
 } */
+
+.ornament {
+  position: fixed;
+  bottom: 10vh;
+  right: -9vh;
+
+  fill: #d1dbeb;
+  margin-top: 100px;
+  width: 600px;
+  height: 600px;
+  z-index: -4;
+}
+
+@media(max-width: 600px) {
+  .ornament {
+    position: fixed;
+
+    fill: #d1dbeb;
+    margin-top: 100px;
+    width: 120vw;
+    height: 120vw;
+  }
+}
+

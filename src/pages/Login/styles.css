@@ -14,7 +14,7 @@
 
 .form-input {
   border: 1px solid #dbe1ec;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 16px;
   margin: 4px 0;
   padding: 8px;
@@ -26,11 +26,11 @@
 
 .form-button {
   background-color: rgb(17, 85, 233);
-  border: 1px solid rgb(5, 68, 202);
-  border-radius: 6px;
+  border: none;
+  border-radius: 10px;
   color: white;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 16px;
   padding: 8px 6px;
 }

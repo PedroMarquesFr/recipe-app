@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { AiOutlineUser } from 'react-icons/ai';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import './styles.css';
@@ -39,6 +40,7 @@ export default function Perfil() {
           Sair
         </Link>
       </div>
+      <AiOutlineUser className="ornament" />
       <Footer />
     </div>
   );
