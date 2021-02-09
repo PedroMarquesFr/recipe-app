@@ -4,6 +4,7 @@
   flex-flow: row wrap;
   justify-content: center;
   padding: 30px;
+  transition: 1s;
 }
 
 .list-foods {

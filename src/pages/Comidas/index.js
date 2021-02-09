@@ -11,6 +11,7 @@ import {
 import './styles.css';
 import SearchBar from '../../components/SearchBar';
 import Header from '../../components/Header';
+import Loading from '../../components/Loading';
 
 function Comidas(props) {
   const [categories, setCategories] = useState([]);
@@ -25,7 +26,9 @@ function Comidas(props) {
     if (isFetching) {
       return (
         <div className="container-drinks">
-          <div className="loader" />
+          {[...Array(12)].map((el, idx) => (
+            <Loading key={ idx } />
+          ))}
         </div>
       );
     }

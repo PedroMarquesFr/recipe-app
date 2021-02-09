@@ -78,8 +78,8 @@ function ComidasID({
     <div>
       <FoodThumb detailed={ detailed } route={ route } id={ id } />
       <div className="ala">
-        <ul>
-          Ingredientes:
+        <ul className="ing-ul">
+          <span className="t-ing">Ingredientes:</span>
           {Object.keys(detailed[0]).map((key, index) => {
             const ingredientIndex = key.match(/(\d+)/);
             if (detailed[0][key] && key.includes('strIngredient')) {

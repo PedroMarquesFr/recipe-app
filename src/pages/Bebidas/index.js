@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer/index';
 import Header from '../../components/Header';
+import Loading from '../../components/Loading';
 import SearchBar from '../../components/SearchBar';
 import {
   fetchCocktailByName,
@@ -25,7 +26,9 @@ function Bebidas(props) {
     if (isFetching) {
       return (
         <div className="container-drinks">
-          <div className="loader" />
+          {[...Array(12)].map((el, idx) => (
+            <Loading key={ idx } />
+          ))}
         </div>
       );
     }

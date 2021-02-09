@@ -16,7 +16,9 @@
 }
 
 .recipe-thumbnail {
-  height: 28vh;
+  height: 60vh;
   object-fit: cover;
   width: 100vw;
+  border-bottom-right-radius: 34px;
+  border-bottom-left-radius: 34px;
 }
